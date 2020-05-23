@@ -1,0 +1,5 @@
+@mixin wrapper {
+    max-width: $wrapper-width;
+    width: 100%;
+    padding: 0 $wrapper-padding;
+}

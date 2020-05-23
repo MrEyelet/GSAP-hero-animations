@@ -1,0 +1,60 @@
+.tiles {
+  display: flex;
+  justify-content: center;
+  max-width: 137rem;
+  width: 100%;
+  margin: 0 auto 5rem;
+  overflow: hidden;
+  &__single {
+    flex: 1;
+    text-align: left;
+    padding: 2rem 5rem;
+    text-decoration: none;
+    color: $color_white;
+    img {
+      width: 3.2rem;
+      height: 3.4rem;
+    }
+    &:hover {
+      .tiles__link {
+        transform: translateX(5.5rem);
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  &__desc {
+    max-width: 34rem;
+    width: 100%;
+    font-size: 1.4rem;
+    opacity: 0.5;
+  }
+  &__anime {
+    display: block;
+    overflow: hidden;
+  }
+  &__link {
+    display: block;
+    position: relative;
+    font-weight: 600;
+    color: $color_primary;
+    transition: transform 0.5s ease-in-out;
+    &:before {
+      content: "";
+      width: 5rem;
+      height: 1px;
+      position: absolute;
+      left: -5.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $color_primary;
+    }
+  }
+}

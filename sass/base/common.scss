@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: vw(10);
+  font-family: $base-font;
+  @include portrait {
+    font-size: 10px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  visibility: hidden;
+}

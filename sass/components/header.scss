@@ -1,0 +1,14 @@
+$header-height: 8rem;
+.header { @include wrapper;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: $saturn;
+    &__container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       height: $header-height;
+    }
+}

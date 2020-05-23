@@ -1,0 +1,39 @@
+.burger {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  background: transparent;
+  border: none;
+  z-index: $uran;
+  &:before,
+  &:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: $color_white;
+    transition: 0.2s linear;
+  }
+
+  &:before {
+    top: 12px;
+    left: 0;
+  }
+  &:after {
+    bottom: 12px;
+    left: 0;
+  }
+  &.is-open {
+    &:before {
+      transform: translateY(4px) rotate(45deg);
+      background-color: tomato;
+    }
+    &:after {
+      transform: translateY(-4px) rotate(-45deg);
+      background-color: tomato;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

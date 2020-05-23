@@ -1,0 +1,25 @@
+@mixin mobile {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+@mixin portrait {
+  @media (max-width: #{$screen-portrait}) {
+    @content;
+  }
+}
+@mixin portrait-sm {
+  @media (max-width: #{$screen-portrait-sm}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$screen-tablet}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (max-width: #{$screen-laptop-sm}) {
+    @content;
+  }
+}
