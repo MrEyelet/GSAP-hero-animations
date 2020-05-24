@@ -1,5 +1,8 @@
 .hero {
   // display: none;
+  @include tablet {
+    height: calc(100 * var(--vh));
+  }
   position: relative;
   &__container {
     @include resp-img((600/1200) * 100%);
@@ -9,9 +12,6 @@
     text-align: center;
     color: $color_white;
     overflow: hidden;
-    @include tablet {
-      height: calc(100 * var(--vh));
-    }
   }
   &__cta {
     display: flex;
