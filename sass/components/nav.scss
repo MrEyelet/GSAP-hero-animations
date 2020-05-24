@@ -9,7 +9,7 @@
   left: 0;
   pointer-events: none;
   visibility: hidden;
-  @include mobile {
+  @include mobile-lg {
     flex-direction: column-reverse;
     justify-content: flex-start;
   }
@@ -62,7 +62,7 @@
     &--contact,
     &--socials {
       text-align: left;
-      @include mobile {
+      @include mobile-lg {
         text-align: right;
       }
     }

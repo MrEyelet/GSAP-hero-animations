@@ -372,7 +372,7 @@ https://mkrtchyan.ga
   pointer-events: none;
   visibility: hidden;
 }
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .nav {
     flex-direction: column-reverse;
     justify-content: flex-start;
@@ -444,7 +444,7 @@ https://mkrtchyan.ga
 .nav__list--contact, .nav__list--socials {
   text-align: left;
 }
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .nav__list--contact, .nav__list--socials {
     text-align: right;
   }
