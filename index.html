@@ -177,12 +177,14 @@
       tlNav.to(".nav__bg--moon", 1.5, { opacity: 1, ease: Power4.easeOut }, "-=1")
       document.querySelector(".burger").addEventListener("click", letsAnimate)
       function letsAnimate() {
-        tlNav.reversed() ? tlNav.play() : tlNav.reverse()
+        tlNav.reversed() ? tlNav.timeScale(1).play() : tlNav.timeScale(2).reverse()
         this.classList.toggle("is-open")
+        // console.log(tlNav.reversed(), tlNav.play());
+        
       }
     </script>
     <script>
-      window.addEventListener('load resize', () => { 
+      window.addEventListener('resize', () => { 
         document.querySelector(':root').style
           .setProperty('--vh', window.innerHeight/100 + 'px');
       })
