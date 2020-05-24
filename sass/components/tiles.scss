@@ -16,8 +16,12 @@
     text-decoration: none;
     color: $color_white;
     @include portrait {
-      min-width: 60%;
+      min-width: 75%;
       scroll-snap-align: start;
+    }
+    @include phablet {
+      min-width: 90%;
+      padding: 2rem;
     }
     img {
       width: 3.2rem;

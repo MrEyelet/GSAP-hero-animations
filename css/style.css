@@ -205,8 +205,14 @@ img {
 }
 @media only screen and (max-width: 768px) {
   .tiles__single {
-    min-width: 60%;
+    min-width: 75%;
     scroll-snap-align: start;
+  }
+}
+@media (max-width: 576px) {
+  .tiles__single {
+    min-width: 90%;
+    padding: 2rem;
   }
 }
 .tiles__single img {
