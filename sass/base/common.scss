@@ -4,7 +4,7 @@
 html {
   font-size: vw(10);
   font-family: $base-font;
-  @include portrait {
+  @include tablet {
     font-size: 10px;
   }
 }

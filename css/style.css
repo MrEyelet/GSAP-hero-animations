@@ -9,7 +9,7 @@ html {
   font-size: 0.6944444444vw;
   font-family: "Montserrat", sans-serif;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   html {
     font-size: 10px;
   }
@@ -128,7 +128,7 @@ img {
   transform: translateX(-50%);
   z-index: 1000;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .hero__cta-wrap {
     margin-top: calc(50vh - 30rem);
   }
