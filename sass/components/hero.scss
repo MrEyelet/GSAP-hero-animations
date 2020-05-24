@@ -3,7 +3,8 @@
   position: relative;
   &__container {
     @include resp-img((600/1200) * 100%);
-    height: 100vh;
+    min-height: -webkit-fill-available;
+    min-height: 100vh;
     background-image: url("../img/mountains-stars.png");
     background-repeat: no-repeat;
     text-align: center;
