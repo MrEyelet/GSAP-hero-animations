@@ -228,7 +228,7 @@ img {
 }
 @media (max-width: 576px) {
   .tiles {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
 }
 .tiles__single {
