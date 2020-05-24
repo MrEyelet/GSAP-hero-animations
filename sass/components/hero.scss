@@ -36,10 +36,16 @@
     @include portrait {
       font-size: 5rem;
     }
+    @include phablet {
+      font-size: 3rem;
+    }
     &-wrap {
       height: 7rem;
       position: relative;
       overflow: hidden;
+      @include phablet {
+        height: 4rem;
+      }
     }
     &-hidden {
       width: 100%;

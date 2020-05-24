@@ -146,10 +146,20 @@ img {
     font-size: 5rem;
   }
 }
+@media (max-width: 576px) {
+  .hero__slogan {
+    font-size: 3rem;
+  }
+}
 .hero__slogan-wrap {
   height: 7rem;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 576px) {
+  .hero__slogan-wrap {
+    height: 4rem;
+  }
 }
 .hero__slogan-hidden {
   width: 100%;
