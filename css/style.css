@@ -503,6 +503,14 @@ https://mkrtchyan.ga
   opacity: 0;
   z-index: -3;
 }
+@media (max-width: 576px) {
+  .nav__bg--moon {
+    width: 7.5rem;
+    height: 7.5rem;
+    left: unset;
+    right: 5rem;
+  }
+}
 .nav__list {
   margin: 0 2rem 2rem 0;
   text-align: left;

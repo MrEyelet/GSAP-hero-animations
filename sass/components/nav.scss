@@ -52,6 +52,12 @@
       top: 5rem;
       opacity: 0;
       z-index: -3;
+      @include phablet {
+        width: 7.5rem;
+        height: 7.5rem;
+        left: unset;
+        right: 5rem;
+      }
     }
   }
   &__list {
