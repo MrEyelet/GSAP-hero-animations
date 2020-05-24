@@ -195,6 +195,11 @@ img {
     overflow-x: scroll;
   }
 }
+@media (max-width: 576px) {
+  .tiles {
+    margin-bottom: 0;
+  }
+}
 .tiles__single {
   display: block;
   flex: 1;
@@ -220,7 +225,7 @@ img {
   height: 3.4rem;
 }
 .tiles__single:hover .tiles__link {
-  transform: translateX(5.5rem);
+  transform: translateX(2.5rem);
 }
 .tiles__content {
   display: flex;
@@ -237,6 +242,11 @@ img {
   font-size: 1.4rem;
   opacity: 0.5;
 }
+@media (max-width: 576px) {
+  .tiles__desc {
+    max-width: 100%;
+  }
+}
 .tiles__anime {
   display: block;
   overflow: hidden;
@@ -250,10 +260,10 @@ img {
 }
 .tiles__link:before {
   content: "";
-  width: 5rem;
+  width: 2rem;
   height: 1px;
   position: absolute;
-  left: -5.5rem;
+  left: -2.5rem;
   top: 50%;
   transform: translateY(-50%);
   background-color: #ff7a00;
