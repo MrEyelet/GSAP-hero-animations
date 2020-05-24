@@ -1,5 +1,5 @@
 .hero {
-  display: none;
+  // display: none;
   position: relative;
   &__container {
     @include resp-img((600/1200) * 100%);
