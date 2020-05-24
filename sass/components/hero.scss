@@ -26,6 +26,9 @@
     @include tablet {
       margin-top: calc(50vh - 30rem);
     }
+    @include phablet {
+      margin-top: calc(50vh - 25rem);
+    }
   }
   &__slogan {
     max-width: 85rem;
