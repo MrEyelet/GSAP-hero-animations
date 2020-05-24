@@ -1,5 +1,15 @@
+@mixin mobile-sm {
+  @media (max-width: #{$screen-mobile-sm}) {
+    @content;
+  }
+}
 @mixin mobile {
-  @media (max-width: #{$screen-sm}) {
+  @media (max-width: #{$screen-mobile}) {
+    @content;
+  }
+}
+@mixin mobile-lg {
+  @media (max-width: #{$screen-mobile-lg}) {
     @content;
   }
 }
@@ -9,7 +19,7 @@
   }
 }
 @mixin portrait-lg {
-  @media only screen and (max-width: #{$screen-portrait-sm}) {
+  @media only screen and (max-width: #{$screen-portrait-lg}) {
     @content;
   }
 }

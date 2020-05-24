@@ -372,6 +372,12 @@ https://mkrtchyan.ga
   pointer-events: none;
   visibility: hidden;
 }
+@media (max-width: 576px) {
+  .nav {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+}
 .nav__bg {
   background-size: cover;
   background-repeat: no-repeat;
@@ -438,6 +444,11 @@ https://mkrtchyan.ga
 .nav__list--contact, .nav__list--socials {
   text-align: left;
 }
+@media (max-width: 576px) {
+  .nav__list--contact, .nav__list--socials {
+    text-align: right;
+  }
+}
 .nav__list--socials {
   display: flex;
 }
@@ -457,6 +468,11 @@ https://mkrtchyan.ga
   text-align: left;
   opacity: 0.5;
   transition: opacity 0.35s ease-in-out;
+}
+@media only screen and (max-width: 1024px) {
+  .nav__list-contact, .nav__list-social {
+    font-size: 1.4rem;
+  }
 }
 .nav__list-contact:hover, .nav__list-social:hover {
   opacity: 0.9 !important;
@@ -481,6 +497,16 @@ https://mkrtchyan.ga
   background-position: 100%;
   transition: background-position 1s cubic-bezier(0.38, 0.33, 0, 1.03);
   overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .nav__list-link {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav__list-link {
+    font-size: 3rem;
+  }
 }
 .nav__list-link:before {
   content: "";
