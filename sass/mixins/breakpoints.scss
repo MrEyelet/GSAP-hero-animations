@@ -8,7 +8,7 @@
     @content;
   }
 }
-@mixin portrait-sm {
+@mixin portrait-lg {
   @media only screen and (max-width: #{$screen-portrait-sm}) {
     @content;
   }

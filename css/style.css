@@ -141,6 +141,11 @@ img {
   font-weight: 700;
   font-size: 6.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .hero__slogan {
+    font-size: 5rem;
+  }
+}
 .hero__slogan-wrap {
   height: 7rem;
   position: relative;
@@ -152,12 +157,18 @@ img {
   left: 0;
 }
 .hero__desc {
-  max-width: 53rem;
+  max-width: 52rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
   font-size: 1.8rem;
   opacity: 0.5;
+}
+@media only screen and (max-width: 768px) {
+  .hero__desc {
+    max-width: 45rem;
+    font-size: 1.5rem;
+  }
 }
 
 .tiles {
