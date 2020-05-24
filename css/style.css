@@ -110,7 +110,6 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  min-height: -webkit-fill-available;
   min-height: 100vh;
   background-image: url("../img/mountains-stars.png");
   background-repeat: no-repeat;
@@ -130,6 +129,11 @@ img {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+@media only screen and (max-width: 1024px) {
+  .hero__container {
+    height: calc(100 * var(--vh));
+  }
 }
 .hero__cta {
   display: flex;

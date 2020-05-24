@@ -3,13 +3,15 @@
   position: relative;
   &__container {
     @include resp-img((600/1200) * 100%);
-    min-height: -webkit-fill-available;
     min-height: 100vh;
     background-image: url("../img/mountains-stars.png");
     background-repeat: no-repeat;
     text-align: center;
     color: $color_white;
     overflow: hidden;
+    @include tablet {
+      height: calc(100 * var(--vh));
+    }
   }
   &__cta {
     display: flex;
