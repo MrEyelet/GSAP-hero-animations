@@ -105,19 +105,11 @@ img {
 .hero {
   position: relative;
 }
-@media only screen and (max-width: 1024px) {
-  .hero {
-    height: 100vh;
-    /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
-  }
-}
 .hero__container {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  min-height: 100vh;
   background-image: url("../img/mountains-stars.png");
   background-repeat: no-repeat;
   text-align: center;
@@ -136,6 +128,12 @@ img {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+@media only screen and (max-width: 1024px) {
+  .hero__container {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
 }
 .hero__cta {
   display: flex;
