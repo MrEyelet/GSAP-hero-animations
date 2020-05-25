@@ -4,7 +4,7 @@
 html {
   font-size: vw(10);
   font-family: $base-font;
-  overflow: hidden;
+  // overflow: hidden;
   @include tablet {
     font-size: 10px;
   }

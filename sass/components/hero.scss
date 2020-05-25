@@ -1,7 +1,8 @@
 .hero {
   // display: none;
   @include tablet {
-    height: calc(100 * var(--vh));
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
   }
   position: relative;
   &__container {
