@@ -7,6 +7,9 @@
     @include tablet {
       height: 100vh;
       height: calc(var(--vh, 1vh) * 100);
+      &:before {
+        display: none;
+      }
     }
     background-image: url("../img/mountains-stars.png");
     background-repeat: no-repeat;
@@ -19,9 +22,8 @@
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 8.5rem);
+    height: calc(var(--vh, 1vh) * 100);
     position: absolute;
-    top: 10rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: $merkury;
@@ -31,8 +33,7 @@
       margin-top: calc(50vh - 30rem);
     }
     @include phablet {
-      margin-top: calc(50vh - 25rem);
-      margin-top: 0;
+      margin-top: calc(50vh - 20rem);
     }
   }
   &__slogan {

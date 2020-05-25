@@ -134,15 +134,17 @@ img {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
+  .hero__container:before {
+    display: none;
+  }
 }
 .hero__cta {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 8.5rem);
+  height: calc(var(--vh, 1vh) * 100);
   position: absolute;
-  top: 10rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -154,8 +156,7 @@ img {
 }
 @media (max-width: 576px) {
   .hero__cta-wrap {
-    margin-top: calc(50vh - 25rem);
-    margin-top: 0;
+    margin-top: calc(50vh - 20rem);
   }
 }
 .hero__slogan {
