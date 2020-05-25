@@ -155,6 +155,7 @@ img {
 @media (max-width: 576px) {
   .hero__cta-wrap {
     margin-top: calc(50vh - 25rem);
+    margin-top: 0;
   }
 }
 .hero__slogan {

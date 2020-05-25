@@ -32,6 +32,7 @@
     }
     @include phablet {
       margin-top: calc(50vh - 25rem);
+      margin-top: 0;
     }
   }
   &__slogan {
