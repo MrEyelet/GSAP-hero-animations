@@ -188,11 +188,18 @@
       //   document.querySelector(':root').style
       //     .setProperty('--vh', window.innerHeight/1 + 'px');
       // })
-      window.addEventListener('resize', () => {
-        // We execute the same script as before
+      ['load','resize'].forEach( evt => 
+          window.addEventListener(evt, fix100vh, false)
+      );
+      // window.addEventListener('load', () => {
+      //   // We execute the same script as before
+      //   var vh = window.innerHeight * 0.01;
+      //   document.documentElement.style.setProperty('--vh', `${vh}px`);
+      // });
+      function fix100vh() {
         var vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
-      });
+      }
     </script>
   </body>
 </html>
