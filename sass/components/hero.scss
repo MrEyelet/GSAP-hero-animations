@@ -2,7 +2,7 @@
   min-height: 100vh;
   position: relative;
   &__container {
-    @include resp-img((600/1200) * 100%);
+    @include resp-img((590/1200) * 100%);
     min-height: 100vh;
     @include tablet {
       height: 100vh;

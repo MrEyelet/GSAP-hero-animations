@@ -88,6 +88,8 @@
     }
     &-contact,
     &-social {
+      position: relative;
+      z-index: $sun;
       color: $color_white;
       text-decoration: none;
       font-size: 1.8rem;

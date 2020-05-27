@@ -121,7 +121,7 @@ img {
 .hero__container:before {
   content: "";
   display: block;
-  padding-top: 50%;
+  padding-top: 49.1666666667%;
 }
 .hero__container img {
   width: 100%;
@@ -556,6 +556,8 @@ https://mkrtchyan.ga
   border-right: none;
 }
 .nav__list-contact, .nav__list-social {
+  position: relative;
+  z-index: 900;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.8rem;
