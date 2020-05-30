@@ -5,15 +5,15 @@ class Fix100vh {
   }
 
   events() {
-    window.addEventListener("load", this.fix100vh.bind(this))
+    window.addEventListener("DOMContentLoaded", this.fix100vh.bind(this))
   }
 
   fix100vh() {
-    var calcHeight = ["load", "resize"]
-    calcHeight.forEach(evt => window.addEventListener(evt, fix100vh, false))
-    function fix100vh() {
+    const onEvents = ["load", "resize"]
+    onEvents.forEach(evt => window.addEventListener(evt, fixHeight, false))
+    function fixHeight() {
       var vh = window.innerHeight * 0.01
-      document.documentElement.style.setProperty("--vh", `${this.vh}px`)
+      document.documentElement.style.setProperty("--vh", `${vh}px`)
     }
   }
 }
