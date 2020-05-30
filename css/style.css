@@ -72,6 +72,12 @@ img {
   background-color: #ff7a00;
   animation: circular 0.5s infinite ease-out;
 }
+@media (max-width: 576px) {
+  .preloader__outer-circle {
+    width: 7rem;
+    height: 7rem;
+  }
+}
 .preloader__inner-circle {
   width: 60%;
   height: 60%;

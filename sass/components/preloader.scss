@@ -21,6 +21,10 @@
     align-items: center;
     background-color: $color_primary;
     animation: circular 0.5s infinite ease-out;
+    @include phablet {
+      width: 7rem;
+      height: 7rem;
+    }
   }
   &__inner-circle {
     width: 60%;
