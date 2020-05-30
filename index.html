@@ -166,40 +166,33 @@
     });
     </script>
     <script>
-      tlNav = new TimelineMax({ paused: true, reversed: true })
+      // tlNav = new TimelineMax({ paused: true, reversed: true })
 
-      tlNav.to(".nav", 0, { visibility: "visible", ease: Power4.easeOut })
-      tlNav.to(".nav__bg--hill", 1, { opacity: 1, visibility: "visible", transform: "scale(1)", ease: Power4.easeOut })
-      tlNav.staggerFrom(".nav__list-link", 1, { x: "-15%", opacity: 0, "pointer-events": "none", ease: Power4.easeOut }, 0.1, "-=1")
-      tlNav.from(".nav__list-social, .nav__list-contact", 0.1, { opacity: 0, "pointer-events": "none", ease: Power4.easeOut }, "-=0.8")
-      tlNav.staggerFrom(".nav__bg--pines", 1, { opacity: 0, y: 50, ease: Power4.easeOut }, 0.1, "-=1.2")
-      tlNav.to(".hero__cta", 1, { opacity: 0, ease: Power4.easeOut }, "-=1.6")
-      tlNav.to(".nav__bg--moon", 1.5, { opacity: 1, ease: Power4.easeOut }, "-=1")
-      document.querySelector(".burger").addEventListener("click", letsAnimate)
-      function letsAnimate() {
-        tlNav.reversed() ? tlNav.timeScale(1).play() : tlNav.timeScale(2).reverse()
-        this.classList.toggle("is-open")
-        // console.log(tlNav.reversed(), tlNav.play());
+      // tlNav.to(".nav", 0, { visibility: "visible", ease: Power4.easeOut })
+      // tlNav.to(".nav__bg--hill", 1, { opacity: 1, visibility: "visible", transform: "scale(1)", ease: Power4.easeOut })
+      // tlNav.staggerFrom(".nav__list-link", 1, { x: "-15%", opacity: 0, "pointer-events": "none", ease: Power4.easeOut }, 0.1, "-=1")
+      // tlNav.from(".nav__list-social, .nav__list-contact", 0.1, { opacity: 0, "pointer-events": "none", ease: Power4.easeOut }, "-=0.8")
+      // tlNav.staggerFrom(".nav__bg--pines", 1, { opacity: 0, y: 50, ease: Power4.easeOut }, 0.1, "-=1.2")
+      // tlNav.to(".hero__cta", 1, { opacity: 0, ease: Power4.easeOut }, "-=1.6")
+      // tlNav.to(".nav__bg--moon", 1.5, { opacity: 1, ease: Power4.easeOut }, "-=1")
+      // document.querySelector(".burger").addEventListener("click", letsAnimate)
+      // function letsAnimate() {
+      //   tlNav.reversed() ? tlNav.timeScale(1).play() : tlNav.timeScale(2).reverse()
+      //   this.classList.toggle("is-open")
+      //   // console.log(tlNav.reversed(), tlNav.play());
         
-      }
+      // }
     </script>
     <script>
-      // window.addEventListener('resize', () => { 
-      //   document.querySelector(':root').style
-      //     .setProperty('--vh', window.innerHeight/1 + 'px');
-      // })
-      ['load','resize'].forEach( evt => 
-          window.addEventListener(evt, fix100vh, false)
-      );
-      // window.addEventListener('load', () => {
-      //   // We execute the same script as before
+      // var test = ['load','resize'];
+      // test.forEach( evt => 
+      //     window.addEventListener(evt, fix100vh , false)
+      // );
+      // function fix100vh() {
       //   var vh = window.innerHeight * 0.01;
       //   document.documentElement.style.setProperty('--vh', `${vh}px`);
-      // });
-      function fix100vh() {
-        var vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-      }
+      // }
     </script>
+    <script src="js/main-dist.js"></script>
   </body>
 </html>
