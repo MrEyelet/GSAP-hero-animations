@@ -4,12 +4,14 @@
   justify-content: space-between;
   width: 100%;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
   visibility: hidden;
+  @include tablet {
+    height: $real-100vh;
+  }
   @include mobile-lg {
     flex-direction: column-reverse;
     justify-content: flex-start;

@@ -104,9 +104,8 @@ https://mkrtchyan.ga
 
 .sky__clouds {
   height: 50vh;
-  background: transparent url(../img/clouds-grey.png) repeat;
+  background: transparent url(../img/clouds-grey.png) repeat-x;
   background-size: contain;
-  background-repeat: repeat-x;
   z-index: 3;
 
   -moz-animation: move-clouds-back 1500s linear infinite;

@@ -2,11 +2,11 @@
   min-height: 100vh;
   position: relative;
   &__container {
-    @include resp-img((590/1200) * 100%);
+    @include resp-img((580/1200) * 100%);
     min-height: 100vh;
     @include tablet {
       height: 100vh;
-      height: calc(var(--vh, 1vh) * 100);
+      height: $real-100vh;
       &:before {
         display: none;
       }
@@ -30,7 +30,7 @@
     z-index: $merkury;
     @include tablet {
       height: 100vh;
-      height: calc(var(--vh, 1vh) * 100);
+      height: $real-100vh;
       top: 0;
     }
   }

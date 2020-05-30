@@ -6,6 +6,8 @@ $wrapper-width: 144rem;
 $wrapper-padding: 2rem;
 $vw_base: 1440;
 
+$real-100vh: calc(var(--vh, 1vh) * 100);
+
 $heading-font: "Libre Baskerville", serif;
 $base-font: "Montserrat", sans-serif;
 
