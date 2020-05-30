@@ -20,9 +20,13 @@ class AppearElements {
   }
 
   showElements() {
-    this.preloader.remove()
-
-    this.tlShowElements.staggerFrom(".hero__slogan-hidden", 1.5, { y: "100%", opacity: 0, ease: Power4.easeOut }, 0.1)
+    setTimeout(() => {
+      this.preloader.remove()
+    }, 2500)
+    this.tlShowElements.from(".preloader__cover", 1.5, { x: "200%", ease: Power1.easeOut })
+    this.tlShowElements.to(".preloader__outer-circle", 0.5, { opacity: 0, ease: Power4.easeOut }, "=-1.5")
+    this.tlShowElements.to(".preloader", 1.5, { x: "-100%", ease: Power4.easeOut }, "=-1")
+    this.tlShowElements.staggerFrom(".hero__slogan-hidden", 1.5, { y: "100%", opacity: 0, ease: Power4.easeOut }, 0.1, "=-1")
     this.tlShowElements.staggerFrom(".tiles__single", 1.5, { y: "15%", opacity: 0, ease: Power4.easeOut }, 0.2, "-=1.5")
     this.tlShowElements.from(".hero__desc", 0.75, { opacity: 0, ease: Sine.easeOut }, "-=1.5")
     this.tlShowElements.staggerFrom(".cover", 1.5, { x: "-200%", ease: Power4.easeOut }, 0.2, "-=1.5")
