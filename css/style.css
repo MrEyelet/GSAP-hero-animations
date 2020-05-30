@@ -24,6 +24,10 @@ img {
   visibility: hidden;
 }
 
+button {
+  outline: none;
+}
+
 .section {
   width: 100%;
   position: relative;
