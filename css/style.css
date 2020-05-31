@@ -126,9 +126,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8rem;
+  width: 4rem;
   height: 8rem;
-  padding: 0 2rem;
 }
 
 .burger {
