@@ -3,7 +3,7 @@
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
-  min-height: 45rem;
+  // min-height: 45rem;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -62,6 +62,9 @@
         left: unset;
         top: 9rem;
         right: 5rem;
+      }
+      @media only screen and (max-height: 500px) {
+        display: none;
       }
     }
   }
