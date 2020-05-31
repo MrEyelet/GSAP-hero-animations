@@ -1,1 +1,3 @@
-# GSAP-hero-animations
+# GSAP animations
+
+# Animations done using GSAB library.
