@@ -701,6 +701,11 @@ https://mkrtchyan.ga
     font-size: 3rem;
   }
 }
+@media only screen and (max-height: 500px) {
+  .nav__list-link {
+    font-size: 1.8rem;
+  }
+}
 .nav__list-link:before {
   content: "";
   width: 100%;

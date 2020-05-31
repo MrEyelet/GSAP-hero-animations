@@ -134,6 +134,9 @@
       @include portrait {
         font-size: 3rem;
       }
+      @media only screen and (max-height: 500px) {
+        font-size: 1.8rem;
+      }
       &:before {
         content: "";
         width: 100%;

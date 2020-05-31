@@ -1,5 +1,6 @@
 class Menu {
   constructor() {
+    this.body = document.querySelector("body")
     this.burger = document.querySelector(".burger")
     this.tlMenu = new TimelineMax({ paused: true, reversed: true })
 
@@ -22,10 +23,9 @@ class Menu {
   }
 
   showMenu() {
-    console.log("toggle open")
-
     this.tlMenu.reversed() ? this.tlMenu.timeScale(1).play() : this.tlMenu.timeScale(2).reverse()
     this.burger.classList.toggle("is-open")
+    this.body.style.overflow = "hidden"
   }
 }
 
