@@ -12,6 +12,9 @@
   @include phablet {
     margin-bottom: 2rem;
   }
+  @media only screen and (max-height: 500px) {
+    min-height: 45rem;
+  }
   &__single {
     display: block;
     flex: 1;

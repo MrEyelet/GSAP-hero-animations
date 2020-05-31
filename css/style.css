@@ -56,7 +56,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   left: 0;
   top: 0;
@@ -171,6 +171,11 @@ button {
   min-height: 100vh;
   position: relative;
 }
+@media only screen and (max-height: 500px) {
+  .hero {
+    min-height: 55rem;
+  }
+}
 .hero__container {
   background-size: cover;
   background-repeat: no-repeat;
@@ -205,6 +210,11 @@ button {
     display: none;
   }
 }
+@media only screen and (max-height: 500px) {
+  .hero__container {
+    min-height: 55rem;
+  }
+}
 .hero__cta {
   display: flex;
   justify-content: space-between;
@@ -224,6 +234,11 @@ button {
     top: 0;
   }
 }
+@media only screen and (max-height: 500px) {
+  .hero__cta {
+    min-height: 55rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .hero__cta-wrap {
     margin-top: calc(50vh - 30rem);
@@ -232,6 +247,11 @@ button {
 @media (max-width: 576px) {
   .hero__cta-wrap {
     margin-top: calc(50vh - 20rem);
+  }
+}
+@media only screen and (max-height: 500px) {
+  .hero__cta-wrap {
+    margin-top: 8rem;
   }
 }
 .hero__slogan {
@@ -310,6 +330,11 @@ button {
 @media (max-width: 576px) {
   .tiles {
     margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-height: 500px) {
+  .tiles {
+    min-height: 45rem;
   }
 }
 .tiles__single {
@@ -513,6 +538,7 @@ https://mkrtchyan.ga
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
+  min-height: 45rem;
   height: 100vh;
   position: absolute;
   top: 0;

@@ -1,9 +1,17 @@
 .hero {
   min-height: 100vh;
   position: relative;
+  @media only screen and (max-height: 500px) {
+    min-height: 55rem;
+  }
   &__container {
     @include resp-img((580/1200) * 100%);
     min-height: 100vh;
+    background-image: url("../img/mountains-stars.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    color: $color_white;
+    overflow: hidden;
     @include tablet {
       height: 100vh;
       height: $real-100vh;
@@ -11,11 +19,9 @@
         display: none;
       }
     }
-    background-image: url("../img/mountains-stars.png");
-    background-repeat: no-repeat;
-    text-align: center;
-    color: $color_white;
-    overflow: hidden;
+    @media only screen and (max-height: 500px) {
+      min-height: 55rem;
+    }
   }
   &__cta {
     display: flex;
@@ -33,6 +39,9 @@
       height: $real-100vh;
       top: 0;
     }
+    @media only screen and (max-height: 500px) {
+      min-height: 55rem;
+    }
   }
   &__cta-wrap {
     @include tablet {
@@ -40,6 +49,9 @@
     }
     @include phablet {
       margin-top: calc(50vh - 20rem);
+    }
+    @media only screen and (max-height: 500px) {
+      margin-top: 8rem;
     }
   }
   &__slogan {
